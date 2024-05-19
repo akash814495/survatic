@@ -1,6 +1,5 @@
 
 import './App.css';
-// import About from './componets/About';
 import Navbar from './componets/Navbar';
 import TextForm from './componets/TextForm';
 import Alart from './componets/Alart';
@@ -58,7 +57,7 @@ function App() {
         <Routes>
             <Route exact path="/About" element={<About />}/>
             
-            <Route exact path="/" element={<TextForm heading="Enter text to analyze"  mode={mode} showAlert={showAlart} />}/>
+            <Route exact path="/" element={<TextForm heading="Enter text to analyze"  mode={mode} showAlart={showAlart}/>}/>
             
           </Routes>
         </div>
