@@ -55,9 +55,10 @@ function App() {
         <Alart alart= {alart} />
         <div className="container  my-3"> 
         <Routes>
-            <Route exact path="/About" element={<About />}/>
+            <Route exact path="/About" element={<About mode ={mode}/>}/>
             
-            <Route exact path="/" element={<TextForm heading="Enter text to analyze"  mode={mode} showAlart={showAlart}/>}/>
+           <Route exact path="/" element = {<TextForm heading="Enter text to analyze"  mode={mode} showAlart={showAlart}/>}/>
+
             
           </Routes>
         </div>
